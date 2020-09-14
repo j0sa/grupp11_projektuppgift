@@ -52,11 +52,12 @@ body {
 }
 .right {
   grid-area: right;
-  style="background-color:#ccc;
+  background-color:#ccc;
 }
 .grid-container > div img{
     max-width: 100%;
 }
+
 @media (max-width: 600px) {
   .grid-container{
     grid-template-areas: 
