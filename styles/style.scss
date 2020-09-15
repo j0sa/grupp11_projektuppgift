@@ -15,14 +15,6 @@ body {
     background-color: #1b1b1b;
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
-.navbar{
-    grid-area: navbar;
-    background-color: white;
-    padding: 30px;
-    text-align: center;
-    font-size: 35px;
-    height: 100px;
-}
 .header {
   grid-area: header;
   background-color: #f1f1f1;
@@ -33,7 +25,6 @@ body {
 .grid-container {
   display: grid;
   grid-template-areas:
-    'navbar navbar navbar navbar navbar navbar'
     'header header header header header header' 
     'left left middle middle right right' 
     'footer footer footer footer footer footer';
