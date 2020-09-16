@@ -62,12 +62,13 @@ body {
       'footer footer footer footer footer footer footer footer';
   }
 }
+
 /* nav  */
-.topnav {
+.nav-menu {
   overflow: hidden;
   background-color: #333;
 }
-.topnav a {
+.nav-menu a {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -76,32 +77,32 @@ body {
   text-decoration: none;
   font-size: 17px;
 }
-.topnav a:hover {
+.nav-menu a:hover {
   background-color: #ddd;
   color: black;
 }
-.topnav a.active {
+.nav-menu a.active {
   background-color: #7f27a1;
   color: white;
 }
-.topnav .icon {
+.nav-menu .icon {
   display: none;
 }
 @media screen and (max-width: 700px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
+  .nav-menu a:not(:first-child) {display: none;}
+  .nav-menu a.icon {
     float: right;
     display: block;
   }
 }
 @media screen and (max-width: 700px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
+  .nav-menu.responsive-nav-menu {position: relative;}
+  .nav-menu.responsive-nav-menu .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  .topnav.responsive a {
+  .nav-menu.responsive-nav-menu a {
     float: none;
     display: block;
     text-align: left;
@@ -138,7 +139,7 @@ body {
 }
 
 
-/* better grid layout */
+/* better layout */
 .grid-wrapper{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -165,4 +166,30 @@ body {
 }
 .box5{
     background-color: aliceblue;
+}
+@media screen and (max-width: 700px){
+    .box2{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 3; 
+        grid-row-end: 4;
+    }
+    .box3{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 5; 
+        grid-row-end: 6;
+    }
+    .box4{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 7; 
+        grid-row-end: 8;
+    }
+    .box5{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 9; 
+        grid-row-end: 10;
+    }
 }

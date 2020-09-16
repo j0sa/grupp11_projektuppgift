@@ -1,8 +1,8 @@
-function responsiveNav() {
-    let x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
+function toggleHamburgerMenu() {
+    let x = document.getElementById("nav-menu");
+    if (x.className === "nav-menu") {
+        x.className += " responsive-nav-menu";
     } else {
-        x.className = "topnav";
+        x.className = "nav-menu";
     }
 }
