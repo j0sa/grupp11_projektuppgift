@@ -13,7 +13,9 @@ body {
     background-color: white;
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
-.header {
+
+/* layout  */
+/* .header {
   grid-area: header;
   background-color: #f1f1f1;
   padding: 30px;
@@ -61,7 +63,7 @@ body {
       'right right right right right right right right' 
       'footer footer footer footer footer footer footer footer';
   }
-}
+} */
 
 /* nav  */
 .nav-menu {
@@ -260,6 +262,7 @@ input:focus, textarea:focus{
     outline: 3px solid goldenrod;
 }
 input, textarea, button{
+    background-color: antiquewhite;
     width: 100%;
     border: 1px solid white;
 }

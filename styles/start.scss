@@ -1,0 +1,33 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body {
+    margin: 20px;
+    padding: 10px;
+    min-height: 100vh;
+    background-color: white;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+} 
+
+.start-wrapper{
+    text-align: center;
+}
+button{
+
+    background-color: darkgrey; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+
+}
+
+button:hover, button:focus{
+    background-color: #7f27a1;
+}
