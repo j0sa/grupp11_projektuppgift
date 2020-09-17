@@ -90,14 +90,14 @@ body {
 .nav-menu .icon {
   display: none;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .nav-menu a:not(:first-child) {display: none;}
   .nav-menu a.icon {
     float: right;
     display: block;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800x) {
   .nav-menu.responsive-nav-menu {position: relative;}
   .nav-menu.responsive-nav-menu .icon {
     position: absolute;
@@ -169,7 +169,7 @@ body {
 .box5{
     background-color: aliceblue;
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
     .box2{
         grid-column-start: 1;
         grid-column-end: 5;
