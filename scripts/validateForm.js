@@ -142,16 +142,44 @@ submit.addEventListener('click', function () {
 window.onload = function () {
     let submit = document.getElementById("submit");
     let fname = document.getElementById("fname");
+    let lname = document.getElementById("lname");
+    let tel = document.getElementById("tel");
+    let email = document.getElementById("email");
+
     fname.oninput = function () {
         console.log(this.value);
     }
-    submit.onclick = function () {
-        console.log(fname.value);
-        localStorage.setItem("fname", fname.value);
+    lname.oninput = function () {
+        console.log(this.value);
+    }
+    tel.oninput = function () {
+        console.log(this.value);
+    }
+    email.oninput = function () {
+        console.log(this.value);
     }
 
-    if (localStorage.getItem("fname")) {
-        document.forms["contactform"]["fname"].value = localStorage.getItem("fname");
+    submit.onclick = function () {
+        let contactInformation = {
+            fname: fname.value,
+            lname: lname.value,
+            tel: tel.value,
+            email: email.value
+        };
+
+        localStorage.setItem("contactinformation", JSON.stringify(contactInformation));
+    }
+
+    if (localStorage.getItem("contactinformation")) {
+        let contactInformationString = localStorage.getItem("contactinformation");
+        let contactInformation = JSON.parse(contactInformationString);
+
+        console.log(contactInformation);
+
+        fname.value = contactInformation.fname;
+        lname.value = contactInformation.lname;
+        tel.value = contactInformation.tel;
+        email.value = contactInformation.email;
     }
 }
 
@@ -161,8 +189,8 @@ window.onload = function () {
     document.forms["contactform"].attachEvent('onsubmit', saveToLocalStorage);
 } */
 
-document.forms["contactform"].addEventListener("submit", function (e) {
+/* document.forms["contactform"].addEventListener("submit", function (e) {
     if (!isValid) {
         e.preventDefault();    //stop form from submitting
     }
-});
+}); */
