@@ -31,6 +31,7 @@ body {
 .nav-menu a:hover {
   background-color: #ddd;
   color: black;
+  transition: 0.5s;
 }
 .nav-menu a.active {
   background-color: #7f27a1;
@@ -154,7 +155,8 @@ ul {
 }
 .contactinformation {
     background: #7f27a1;
-    color: #ccc;
+    /* color: #ccc; */
+    color: white;
 }
 .form {
     background: #fff
@@ -180,6 +182,31 @@ button {
     background: grey;
     width: 100%;
     border: 0;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+}
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+button:hover span {
+    padding-right: 25px;
+}
+button:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 button:hover, button:focus {
     background: #7f27a1;
