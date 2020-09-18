@@ -63,7 +63,7 @@ body {
 /* better layout */
 .grid-wrapper{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 200px;
     position: relative;
 }
@@ -85,9 +85,6 @@ body {
 .box4{
     background-color: #aaa;
 }
-.box5{
-    background-color: aliceblue;
-}
 @media screen and (max-width: 800px){
     .box2{
         grid-column-start: 1;
@@ -106,12 +103,6 @@ body {
         grid-column-end: 5;
         grid-row-start: 7; 
         grid-row-end: 8;
-    }
-    .box5{
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 9; 
-        grid-row-end: 10;
     }
 }
 
