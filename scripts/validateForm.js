@@ -1,4 +1,4 @@
-function CustomValidation() {
+/* function CustomValidation() {
     this.invalidities = [];
     this.validityChecks = [];
 }
@@ -136,5 +136,33 @@ for (var i = 0; i < inputs.length; i++) {
 submit.addEventListener('click', function () {
     for (var i = 0; i < inputs.length; i++) {
         checkInput(inputs[i]);
+    }
+}); */
+
+window.onload = function () {
+    let submit = document.getElementById("submit");
+    let fname = document.getElementById("fname");
+    fname.oninput = function () {
+        console.log(this.value);
+    }
+    submit.onclick = function () {
+        console.log(fname.value);
+        localStorage.setItem("fname", fname.value);
+    }
+
+    if (localStorage.getItem("fname")) {
+        document.forms["contactform"]["fname"].value = localStorage.getItem("fname");
+    }
+}
+
+/* if (document.forms["contactform"].addEventListener) {
+    document.forms["contactform"].addEventListener("submit", saveToLocalStorage, false);
+} else if (document.forms["contactform"].attachEvent) {
+    document.forms["contactform"].attachEvent('onsubmit', saveToLocalStorage);
+} */
+
+document.forms["contactform"].addEventListener("submit", function (e) {
+    if (!isValid) {
+        e.preventDefault();    //stop form from submitting
     }
 });
