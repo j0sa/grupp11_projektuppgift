@@ -4,13 +4,15 @@
 }
 html {
     font-size: 100%;
+    /* overflow: hidden; */
 }
 body {
     margin: 0;
 }
+
 /* buttons */
 button {
-    background-color: darkgrey; 
+    background-color: grey; 
     border: none;
     color: white;
     padding: 15px 32px;
@@ -38,9 +40,10 @@ button:hover, button:focus {
     transform:translate(0%,-50%);
     -ms-transform:translate(0%,-50%)
 }
+
 .display-middle {
     background-color: darkgrey;
-    opacity: 0.6;
+    opacity: 0.9;
     text-align: center;
     position:absolute;
     top:50%;
@@ -48,15 +51,18 @@ button:hover, button:focus {
     transform:translate(-50%,-50%);
     -ms-transform:translate(-50%,-50%)
 }
-/* images */
+
+/* slideshow */
 .slidesshowimage {
   display: none;
 }
 .slidesshow > img {
     min-height: 100%;
     min-width: 1024px;
+
     width: 100%;
     height: auto;
+
     position: fixed;
     top: 0;
     left: 0;
