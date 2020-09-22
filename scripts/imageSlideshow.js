@@ -28,9 +28,9 @@ function showSlides(n) {
 } */
 
 let slideIndex = 1;
+let keepGoing = true;
 let x = document.getElementsByClassName("slidesshowimage");
 
-automaticSlideshow();
 displayImages(slideIndex);
 
 function changeSlideIndex(n) {
@@ -55,8 +55,28 @@ function automaticSlideshow() {
     slideIndex++;
     if (slideIndex > x.length) { slideIndex = 1 }
     x[slideIndex - 1].style.display = "block";
-    setTimeout(automaticSlideshow, 10000);
+
+    if (keepGoing) {
+        setTimeout(automaticSlideshow, 5000);
+    }
 }
+
+function startLoop() {
+    keepGoing = true;
+    automaticSlideshow();
+    console.log("Started loop");
+}
+
+function stoploop() {
+    keepGoing = false;
+    console.log("Stopped loop");
+}
+
+function startStopSlideshow() {
+    let className = document.getElementsByTagName("i").className;
+    return className;
+}
+
 
 $(".display-middle").mouseenter(function () {
     $(".display-middle").animate({ opacity: '1' });
