@@ -31,6 +31,8 @@ let slideIndex = 1;
 let keepGoing = true;
 let x = document.getElementsByClassName("slidesshowimage");
 
+automaticSlideshow();
+
 displayImages(slideIndex);
 
 function changeSlideIndex(n) {
@@ -73,10 +75,8 @@ function stoploop() {
 }
 
 function startStopSlideshow() {
-    let className = document.getElementsByTagName("i").className;
-    return className;
+    
 }
-
 
 $(".display-middle").mouseenter(function () {
     $(".display-middle").animate({ opacity: '1' });

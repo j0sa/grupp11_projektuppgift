@@ -21,8 +21,9 @@
         require([
             "esri/Map",
             "esri/views/MapView",
-            "esri/widgets/Search"
-        ], function (Map, MapView, Search) {
+            "esri/widgets/Search",
+            "esri/symbols/SimpleMarkerSymbol"
+        ], function (Map, MapView, Search, SimpleMarkerSymbol) {
 
             var map = new Map({
                 basemap: "topo-vector"
@@ -32,7 +33,7 @@
                 container: "viewDiv",
                 map: map,
                 center: [15.24846, 59.25452],
-                zoom: 11
+                zoom: 17
             });
 
             var search = new Search({
@@ -73,6 +74,17 @@
                     location: pt
                 });
             }
+
+            var symbol = {
+                    type: "simple-marker",  // autocasts as new SimpleMarkerSymbol()
+                    style: "square",
+                    color: "blue",
+                    size: "8px",  // pixels
+                    outline: {  // autocasts as new SimpleLineSymbol()
+                        color: [255, 255, 0],
+                        width: 3  // points
+                    }
+                };
         });
     </script>
 </head>
