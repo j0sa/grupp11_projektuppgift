@@ -1,81 +1,105 @@
-$random-color: rgb(random(255),random(255),random(255));
-
-*{
-    box-sizing: border-box;
+* { 
+    margin: 0; 
     padding: 0;
+}
+body { 
+    font: 16px Helvetica, Sans-Serif; line-height: 24px; 
+    /* background: url();  */
+}
+.clear { 
+    clear: both;
+}
+#page-wrap {
+    width: 800px;
+    margin: 40px auto 60px;
+    padding-top: 20px;
+}
+#pic {
+    float: right;
+    margin: -30px 0 0 0;
+}
+h1 {
+    margin: 0 0 16px 0;
+    padding: 0 0 16px 0;
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    border-bottom: 1px solid #999;
+}
+h2 {
+    font-size: 20px;
+    margin: 0 0 6px 0;
+    position: relative;
+}
+h2 span {
+    position: absolute;
+    bottom: 0; right: 0;
+    font-style: italic;
+    font-family: Georgia, Serif; font-size: 16px;
+    color: #999;
+    font-weight: normal;
+}
+p {
+    margin: 0 0 16px 0;
+}
+a {
+    color: #999;
+    text-decoration: none;
+    border-bottom: 1px dotted #999;
+}
+a:hover {
+    border-bottom-style: solid;
+    color: black;
+}
+ul {
+    margin: 0 0 32px 17px;
+}
+#objective {
+    width: 500px;
+    float: left;
+}
+#objective p {
+    font-family: Georgia, Serif;
+    font-style: italic;
+    color: #666;
+}
+dt {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: right;
+    padding: 0 26px 0 0;
+    width: 150px;
+    float: left;
+    height: 100px;
+    border-right: 1px solid #999; 
+}
+dd {
+    width: 600px;
+    float: right;
+}
+dd.clear {
+    float: none;
     margin: 0;
-}
-html {
-    height: 100%;
-}
-body {
-    min-height: 100%;
-}
-.js-resume {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "photo"
-    "name"
-    "about"
-    "skills";
-    width: 100vw;
-    height: 100vh;
-}
-@media (min-width: 900px) {
-  .js-resume {
-      grid-template-columns: 2fr 1fr;
-      grid-template-areas:
-        "name photo"
-        "about about"
-        "skills skills";
-  }
-}
-@media (min-width: 1200px) {
-  .js-resume {
-    grid-template-areas:
-      "name photo"
-      "name photo"
-      "about about"
-      "about about"
-      "skills skills";
-  }
-}
-/* .grid-area {
-    border : 1px black solid;
-} */
-.js-name {
-    grid-area: name;
-    background-color: #7f27a1;
-    color: white;
-    text-align: center;
-}
-.js-photo {
-    grid-area: photo;
-    background-color: $random-color;
-    background-image: url(/assets/indvidual-portfolio-assets/20200503_120749-min.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.js-about {
-    grid-area: about;
-    background-color: $random-color;
-}
-.js-skills {
-    grid-area: skills;
-    background-color: $random-color;
-}
-.js-wrapper {
-    padding       : 0;
-    display       : flex;
-    flex-direction: column;
-    align-items   : center;
+    height: 15px;
 }
 
-@page {
-  padding: 0;
-  margin: 0cm;
-  size: A4 portrait;
+.progressbar-container {
+    padding: 0.01em 16px
+}
+.lightgrey-div {
+    color: #000;
+    background-color: #f1f1f1;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.purple-div {
+    color: #fff;
+    background-color: #7f27a1;
+}
+.center-div {
+    display: inline-block;
+    width: auto;
+    text-align: center;
 }
