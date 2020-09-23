@@ -27,4 +27,4 @@ function moveTwo() {
     }
 }
 
-window.onload(moveTwo());
+/* window.onload(move()); */
