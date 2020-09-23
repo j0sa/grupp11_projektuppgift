@@ -84,15 +84,13 @@ dd.clear {
     height: 15px;
 }
 
+/* progress bars */
 .progressbar-container {
     padding: 0.01em 16px
 }
 .lightgrey-div {
     color: #000;
     background-color: #f1f1f1;
-    margin-bottom: 5px;
-    margin-left: 0;
-    margin-right: 0;
 }
 .purple-div {
     color: #fff;
@@ -102,4 +100,9 @@ dd.clear {
     display: inline-block;
     width: auto;
     text-align: center;
+}
+.progressbar-container:after,.progressbar-container:before {
+    content:"";
+    display:table;
+    clear:both
 }
