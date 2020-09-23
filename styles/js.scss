@@ -1,0 +1,74 @@
+$random-color: rgb(random(255),random(255),random(255));
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+}
+.js-resume {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "photo"
+    "name"
+    "about"
+    "skills";
+    width: 100vw;
+    height: 100vh;
+}
+@media (min-width: 900px) {
+  .js-resume {
+      grid-template-columns: 2fr 1fr;
+      grid-template-areas:
+        "name photo"
+        "about about"
+        "skills skills";
+  }
+}
+@media (min-width: 1200px) {
+  .js-resume {
+    grid-template-areas:
+      "name photo"
+      "about about"
+      "about about"
+      "skills skills";
+  }
+}
+.grid-area {
+    border : 1px black solid;
+}
+.js-name {
+    grid-area: name;
+    background-color: $random-color;
+}
+.js-photo {
+    grid-area: photo;
+    background-color: $random-color;
+}
+.js-about {
+    grid-area: about;
+    background-color: $random-color;
+}
+.js-skills {
+    grid-area: skills;
+    background-color: $random-color;
+}
+.js-wrapper {
+    padding       : 0;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+}
+
+@page {
+  padding: 0;
+  margin: 0cm;
+  size: A4 portrait;
+}
