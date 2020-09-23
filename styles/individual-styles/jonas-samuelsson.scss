@@ -36,21 +36,28 @@ body {
   .js-resume {
     grid-template-areas:
       "name photo"
+      "name photo"
       "about about"
       "about about"
       "skills skills";
   }
 }
-.grid-area {
+/* .grid-area {
     border : 1px black solid;
-}
+} */
 .js-name {
     grid-area: name;
-    background-color: $random-color;
+    background-color: #7f27a1;
+    color: white;
+    text-align: center;
 }
 .js-photo {
     grid-area: photo;
     background-color: $random-color;
+    background-image: url(/assets/indvidual-portfolio-assets/20200503_120749-min.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .js-about {
     grid-area: about;
