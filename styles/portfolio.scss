@@ -1,7 +1,7 @@
 .portfolio-grid-wrapper{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 200px;
+    grid-auto-rows: 230px;
     position: relative;
 }
 .projectintroduction{
@@ -30,6 +30,8 @@
     color: white;
     text-align: center;
     padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .projectsummary2{
@@ -37,6 +39,8 @@
     background-color: white;
     text-align: center;
     padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .projectpic2{
     background-image: url(https://manstad-snickeri.se/wp-content/uploads/sites/66/2018/04/apple-logo.png);
@@ -65,6 +69,8 @@
     color: white;
     text-align: center;
     padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .projectsummary4{
@@ -72,6 +78,8 @@
     background-color: white;
     text-align: center;
     padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .projectpic4{
     background-image: url(https://static01.nyt.com/images/2014/08/10/magazine/10wmt/10wmt-superJumbo-v4.jpg);
