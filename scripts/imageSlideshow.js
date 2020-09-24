@@ -28,11 +28,9 @@ function showSlides(n) {
 } */
 
 let slideIndex = 1;
-let keepGoing = true;
 let x = document.getElementsByClassName("slidesshowimage");
 
 automaticSlideshow();
-
 displayImages(slideIndex);
 
 function changeSlideIndex(n) {
@@ -58,24 +56,22 @@ function automaticSlideshow() {
     if (slideIndex > x.length) { slideIndex = 1 }
     x[slideIndex - 1].style.display = "block";
 
-    if (keepGoing) {
-        setTimeout(automaticSlideshow, 5000);
+    animate = setTimeout(automaticSlideshow, 3000);
+}
+
+function startStopSlideShow() {
+    let buttonElement = document.getElementById("buttonicon");
+
+    if (animate > 0) {
+        clearTimeout(animate);
+        animate = 0;
+        console.log("Stopped automatic slideshow");
+        buttonElement.innerHTML = '<i class="fas fa-play"></i>'
+    } else {
+        automaticSlideshow();
+        console.log("Started automatic slideshow");
+        buttonElement.innerHTML = '<i class="fas fa-pause"></i>'
     }
-}
-
-function startLoop() {
-    keepGoing = true;
-    automaticSlideshow();
-    console.log("Started loop");
-}
-
-function stoploop() {
-    keepGoing = false;
-    console.log("Stopped loop");
-}
-
-function startStopSlideshow() {
-    
 }
 
 $(".display-middle").mouseenter(function () {

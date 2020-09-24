@@ -236,7 +236,7 @@ window.onload = function () {
         tel.value = contactInformation.tel;
         email.value = contactInformation.email;
     }
-}
+};
 
 /* if (document.forms["contactform"].addEventListener) {
     document.forms["contactform"].addEventListener("submit", saveToLocalStorage, false);

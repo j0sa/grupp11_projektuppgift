@@ -106,3 +106,8 @@ dd.clear {
     display:table;
     clear:both
 }
+
+img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}

@@ -24,8 +24,11 @@
 
         <button class="changeimage-display-left" onclick="changeSlideIndex(-1)">&#10094;</button>
         <button class="changeimage-display-right" onclick="changeSlideIndex(1)">&#10095;</button>
-        <button class="display-bottommiddle"><span class="bottommiddlecontent"><i
-                    class="fas fa-play"></i></span></button>
+        <button class="display-bottommiddle" onclick="startStopSlideShow()">
+            <span class="bottommiddlecontent" id="buttonicon">
+                <i class="fas fa-pause"></i>
+            </span>
+        </button>
 
         <div class="display-middle">
             <div class="startcontent">
