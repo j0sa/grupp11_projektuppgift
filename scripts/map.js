@@ -2,8 +2,9 @@ require([
     "esri/Map",
     "esri/views/MapView",
     "esri/widgets/Search",
-    "esri/symbols/SimpleMarkerSymbol"
-], function (Map, MapView, Search, SimpleMarkerSymbol) {
+    "esri/Graphic",
+    "esri/layers/GraphicsLayer",
+], function (Map, MapView, Search, Graphic, GraphicsLayer) {
 
     var map = new Map({
         basemap: "topo-vector"
@@ -55,14 +56,68 @@ require([
         });
     }
 
-    var symbol = {
-        type: "simple-marker",  // autocasts as new SimpleMarkerSymbol()
-        style: "square",
-        color: "blue",
-        size: "8px",  // pixels
-        outline: {  // autocasts as new SimpleLineSymbol()
-            color: [255, 255, 0],
-            width: 3  // points
+    /* var graphicsLayer = new GraphicsLayer();
+    map.add(graphicsLayer);
+
+    var point = {
+        type: "point",
+        longitude: 15.240499038,
+        latitude: 59.252665656
+    };
+
+    var simpleMarkerSymbol = {
+        type: "simple-marker",
+        color: [226, 119, 40], // orange
+        outline: {
+            color: [255, 255, 255], // white
+            width: 1
         }
     };
+
+    var pointGraphic = new Graphic({
+        geometry: point,
+        symbol: simpleMarkerSymbol
+    });
+
+    graphicsLayer.add(pointGraphic); */
+
+    // Add a blue location pin
+    /* var pictureGraphic = new Graphic({
+        geometry: {
+            type: "point",
+            longitude: 15.240499038,
+            latitude: 59.252665656
+        },
+        symbol: {
+            type: "picture-marker",
+            url: "https://developers.arcgis.com/labs/images/bluepin.png",
+            width: "14px",
+            height: "26px"
+        }
+    });
+
+    graphicsLayer.add(pictureGraphic); */
+
+    // Add text below the pin
+    /* var textGraphic = new Graphic({
+        geometry: {
+            type: "point",
+            longitude: 15.240499038,
+            latitude: 59.252665656
+        },
+        symbol: {
+            type: "text",
+            color: [25, 25, 25],
+            haloColor: [255, 255, 255],
+            haloSize: "1px",
+            text: "Örebro Universitet!",
+            xoffset: 0,
+            yoffset: -25,
+            font: {
+                size: 12
+            }
+        }
+    });
+
+    graphicsLayer.add(textGraphic); */
 });

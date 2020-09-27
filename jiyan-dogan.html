@@ -1,0 +1,186 @@
+<!DOCTYPE html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jiyan Dogan">
+    <title>j.aro</title>
+    <link rel="stylesheet" href="/styles/style.scss">
+    <link rel="stylesheet" href="/styles/individual-styles/jiyan-dogan.scss">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="nav-menu" id="nav-menu">
+        <a href="index.html">&nbsp;<i class="fa fa-fw fa-home"></i>&nbsp;</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="jonas-samuelsson.html">Jonas Samuelsson</a>
+        <a href="jiyan-dogan.html" class="active">Jiyan Dogan</a>
+        <a href="carl-lindstrom.html">Carl Lindström</a>
+        <a href="contact.html">Kontakta Oss</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleHamburgerMenu()">
+            &nbsp;
+            <i class="fa fa-bars"></i>
+            &nbsp;
+        </a>
+    </div>
+
+    <!--<div class="headbox">
+     <h1>
+          <i>Jiyan Dogan</i>
+     </h1>  
+
+  </div> -->
+
+    <!-- <div class="picturebox">
+        <div style="position:relative;">
+            <img src="assets/img/jijo_picture.jpg" width="200" height="200">
+
+
+        </div>
+
+    </div> -->
+
+    <!--grundprogramering for mitt diagram "chart" & "bars" -->
+
+    <div class="diagram">
+        <div class="nummer">
+            <ul>
+                <li><span>100%</span></li>
+                <li><span>50%</span></li>
+                <li><span>0%</span></li>
+            </ul>
+        </div>
+        <!--ist för div class kan stå ul class -->
+
+        <div class="staplar">
+            <ul>
+                <li>
+                    <div class="stapel" data-percentage="50"></div> <span>val 01</span>
+                </li>
+                <li>
+                    <div class="stapel" data-percentage="30"></div> <span>val 02</span>
+                </li>
+                <li>
+                    <div class="stapel" data-percentage="60"></div> <span>val 03</span>
+                </li>
+                <li>
+                    <div class="stapel" data-percentage="100"></div> <span>val 04</span>
+                </li>
+                <li>
+                    <div class="stapel" data-percentage="80"></div> <span>val 05</span>
+                </li>
+            </ul>
+
+        </div>
+
+    </div> <!-- slut på diagram -->
+
+    <script type="text/javascript">
+        $(function () {
+            $('.staplar li .stapel').each(function (key, stapel) {
+                var percentage = $(this).data('percentage');
+                $(this).animate({
+                    'height': percentage + '%'
+                }, 1000);
+
+            });
+
+        }); </script>
+
+    </div>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+ <body
+    
+    style="font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#aaaaaa;">
+    
+    <div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+      <h1><i>Jiyan Dogan</i></h1>
+    </div>
+    
+    <div style="overflow:auto">
+       
+        <div class="main">
+        <h2>Lorum Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+      </div>
+    
+      <div class="right">
+        <img src="assets/img/jijo_picture.jpg" style="width: 50%;"/>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+      </div>
+    </div>
+    
+    <footer style="background-color:#e5e5e5;text-align:center;
+    padding:6px;margin-top:70px;"> Grupp 11 CoOperations® </footer>
+    
+
+
+</body>
+
+ 
+
+<header> 
+    <h1><strong> balalalal</strong> </h1>
+    <h2> <i>hdhhfhfhfhfhfhfhf</i></h2> </header>
+
+
+
+<aside>
+    
+        <a href="#">Hem</a> |
+        <a href="#">Om oss</a> |
+        <a href="#">Produkter</a> |
+        <a href="#">Kontakt</a>
+        
+        
+</aside> 
+
+-->

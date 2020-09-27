@@ -65,10 +65,10 @@ body {
 .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 200px;
+    grid-auto-rows: 230px;
     position: relative;
 }
-.box1 {
+.introduction-box {
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 1; 
@@ -78,13 +78,28 @@ body {
     font-size: 35px;
 }
 .box2 {
-    background-color: #333;
+    background-image: url(https://avatars1.githubusercontent.com/u/47446346?s=460&u=14db9c573a14899c2c6d91835b201b743aa265c1&v=4);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: calc(50vh - 23px);
 }
 .box3 {
-    background-color: #7f27a1;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/George_Hotz_at_TechCrunch_Disrupt.jpg/440px-George_Hotz_at_TechCrunch_Disrupt.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: calc(50vh - 23px);
 }
 .box4 {
-    background-color: #aaa;
+    background-image: url(https://gohighbrow.com/wp-content/uploads/2019/01/Productivity-hacks_3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: calc(50vh - 23px);
 }
 @media screen and (max-width: 768px) {
     .box2 {
@@ -211,16 +226,4 @@ button:hover span:after {
 button:hover, button:focus {
     background: #7f27a1;
     outline: 0;
-}
-
-#maplink {
-    background-color: #7f27a1;
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    display: inline-block;
-}
-
-#maplink:hover {
-    background-color: red;
 }

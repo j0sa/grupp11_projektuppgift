@@ -1,0 +1,173 @@
+
+/*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; 
+}*/
+
+html {
+    height: 100%;
+  position:absolute;}
+  
+  body{
+   
+    margin: 0;
+      padding: 0;
+      height: 100vh; 
+      /* display: flex; */
+      /* justify-content: flex-end; */ /*kolla center*/ 
+      /* align-items: flex-end; */ /*kolla center*/
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background: rgb(210, 211, 211);
+    }
+  
+    
+      .picturebox {float: right;}
+    
+  
+  
+    .diagram{
+      width: 25px;
+      height: 100px;
+      display: block;
+    }
+  
+  .nummer{
+     
+    color: purple;
+    margin: 0;
+    padding:  0;
+    width: 0px;
+    height: 50%;
+    display: inline-block;
+   }
+  
+  /* nummerlista här ändras vänstra sidan av %  */
+  .nummer li{
+    list-style: none;
+    height: 150px;
+    position:relative;
+    bottom: 125px;
+  }
+  
+  .nummer span{
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+  }
+  
+  .staplar{
+    color:purple;
+    font-size: 12px;
+    font-weight: 600;
+    background: yellow;
+    margin: 20;
+    padding: 0;
+    display: inline-block;
+    width: 500px;
+    height: 300px;
+    box-shadow: 0 0 10px 0 red;
+    border-radius: 5px;
+  }
+  
+  .staplar li{
+    display: table-cell;
+    width: 100px;
+    height: 300px;
+    position: relative;
+    }
+  
+    .staplar span{
+      width: 100%;
+      position: absolute;
+      bottom: -30px;
+      text-align: center;
+    }
+  
+  .staplar .stapel{
+    display: block;
+    background: black;
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 25px;
+    text-align: center;
+    box-shadow: white;
+  }
+  
+  .staplar .stapel:hover{
+    background: greenyellow;
+    box-shadow: white;
+    cursor: pointer; 
+  }
+  
+  
+    .staplar .stapel::before{
+      color: #000;
+      content: attr(data-percentage) '%';
+      position:relative;
+      bottom: 20px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  /*
+  .headbox
+  {
+       background-color:silver;
+       padding: 40px; 
+  
+      
+      }
+  
+  .centerbox
+  { 
+     background-color: silver;
+     padding       : 0;
+     display       : flex;
+     flex-direction: column;
+     align-items   : center;  
+  }
+  */
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /*
+  
+  * { box-sizing: border-box;}
+  
+  
+  
+  .main {
+    float:left;
+    width:60%;
+    padding:20px;
+  }
+  .right {
+    background-color: purple;
+    float:left;
+    width:40%;
+    padding:10px 10px 10px 10px;
+    text-align:center;
+  }
+  
+  @media only screen and (max-width:620px) {
+    /* For mobile phones: *
+   .main, .right {
+      width:100%;
+    }
+  } */ 
