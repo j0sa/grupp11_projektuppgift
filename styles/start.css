@@ -4,19 +4,16 @@
 }
 html {
     font-size: 100%;
-    /* overflow: hidden; */
 }
 body {
     margin: 0;
 }
-
 /* content */
 .startcontent {
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
 }
-
 /* buttons */
 button {
     background-color: grey; 
@@ -64,7 +61,6 @@ button:hover, button:focus {
     transform: translate(-50%,0%);
     -ms-transform: translate(-50%,0%)
 }
-
 /* slideshow */
 .slidesshowimage {
   display: none;
@@ -81,6 +77,6 @@ button:hover, button:focus {
 @media screen and (max-width: 1024px) {
   .slidesshow > img {
     left: 50%;
-    margin-left: -512px;   /* 50% */
+    margin-left: -512px;
   }
 }

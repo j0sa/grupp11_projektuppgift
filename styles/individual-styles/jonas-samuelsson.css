@@ -68,7 +68,6 @@ dd.spacer {
     margin: 0;
     height: 15px;
 }
-
 /* progress bars */
 .progressbar-container {
     padding: 0.01em 16px
@@ -91,7 +90,6 @@ dd.spacer {
     display: table;
     clear: both
 }
-
 /* picture */
 img {
     -webkit-filter: grayscale(100%);
