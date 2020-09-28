@@ -70,7 +70,7 @@ dd.spacer {
 }
 /* progress bars */
 .progressbar-container {
-    padding: 0.01em 16px
+    padding: 0.01em 16px;
 }
 .lightgrey-div {
     color: #000;
@@ -85,10 +85,65 @@ dd.spacer {
     width: auto;
     text-align: center;
 }
-.progressbar-container:after,.progressbar-container:before {
-    content: "";
-    display: table;
-    clear: both
+#ccplusplus-bar {
+    width: 0%;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-name: ccplusplus;
+}
+@keyframes ccplusplus {
+    to {
+        width: 60%;
+    }
+}
+#csharp-bar {
+    width: 0%;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-name: csharp;
+}
+@keyframes csharp{
+    to {
+        width: 50%;
+    }
+}
+#java-bar {
+    width: 0%;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-name: java;
+}
+@keyframes java {
+    to {
+        width: 70%;
+    }
+}
+#javascript-bar {
+    width: 0%;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-name: javascript;
+}
+@keyframes javascript {
+    to {
+        width: 80%;
+    }
+}
+#python-bar {
+    width: 0%;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-name: python;
+}
+@keyframes python {
+    to {
+        width: 90%;
+    }
 }
 /* picture */
 img {
