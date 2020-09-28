@@ -11,10 +11,10 @@ window.onload = function () {
 
         if (reg.test(String(name.value).toLowerCase())) {
             console.log(name.id + " is valid");
-            name.style.outline = "3px solid green";
+            name.style.outline = "2px solid green";
         } else {
             console.log(name.id + " is not valid");
-            name.style.outline = "3px solid red";
+            name.style.outline = "2px solid red";
         }
     }
 
@@ -23,10 +23,10 @@ window.onload = function () {
 
         if (reg.test(String(email.value).toLocaleLowerCase())) {
             console.log(email.id + " is valid");
-            email.style.outline = "3px solid green";
+            email.style.outline = "2px solid green";
         } else {
             console.log(email.id + " is not valid");
-            email.style.outline = "3px solid red";
+            email.style.outline = "2px solid red";
         }
     }
 
@@ -37,20 +37,20 @@ window.onload = function () {
 
         if (regOne.test(String(tel.value))) {
             console.log(tel.id + " is valid");
-            tel.style.outline = "3px solid green";
+            tel.style.outline = "2px solid green";
         } else {
             console.log(tel.id + " is not valid");
-            tel.style.outline = "3px solid red";
+            tel.style.outline = "2px solid red";
         }
     }
 
     function validateMessage(message) {
         if (message.value != "") {
             console.log(message.id + " is valid");
-            message.style.outline = "3px solid green";
+            message.style.outline = "2px solid green";
         } else {
             console.log(message.id + " is not valid");
-            message.style.outline = "3px solid red";
+            message.style.outline = "2px solid red";
         }
     }
 
