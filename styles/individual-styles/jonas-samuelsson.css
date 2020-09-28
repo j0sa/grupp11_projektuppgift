@@ -16,8 +16,6 @@
     padding: 0 0 16px 0;
     font-size: 42px;
     font-weight: bold;
-    letter-spacing: -2px;
-    border-bottom: 1px solid #999;
 }
 h2 {
     font-size: 20px;
@@ -87,7 +85,7 @@ dd.spacer {
 }
 #ccplusplus-bar {
     width: 0%;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
     animation-name: ccplusplus;
@@ -99,7 +97,7 @@ dd.spacer {
 }
 #csharp-bar {
     width: 0%;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
     animation-name: csharp;
@@ -111,7 +109,7 @@ dd.spacer {
 }
 #java-bar {
     width: 0%;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
     animation-name: java;
@@ -123,7 +121,7 @@ dd.spacer {
 }
 #javascript-bar {
     width: 0%;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
     animation-name: javascript;
@@ -135,7 +133,7 @@ dd.spacer {
 }
 #python-bar {
     width: 0%;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
     animation-name: python;

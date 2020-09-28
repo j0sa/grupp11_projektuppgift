@@ -1,15 +1,12 @@
-<!DOCTYPE html lang="en">
-
-
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Jiyan Dogan">
     <title>j.aro</title>
-    <link rel="stylesheet" href="/styles/style.scss">
-    <link rel="stylesheet" href="/styles/individual-styles/jiyan-dogan.scss">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/individual-styles/jiyan-dogan.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -34,54 +31,50 @@
         </a>
     </div>
 
-    <!--<div class="headbox">
-     <h1>
-          <i>Jiyan Dogan</i>
-     </h1>  
+    <div class="beskrivning">
+        <h2>Jiyan Dogan</h2><br>
+        <p>
+            <i>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. </br> Odit veniam in unde quisquam aspernatur
+                blanditiis, </br> aperiam inventore non consequuntur quam.</br> Quod quas nulla veniam corrupti! </br>
+                Corporis mollitia praesentium nostrum ipsam. </br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. </br> Dolorum, in illo sunt at error voluptatem
+                reprehenderit laborum esse. </br> Lorem ipsum dolor sit amet consectetur adipisicing elit.</br> Qui
+                quasi minima minus, iste nobis culpa, </br>obcaecati non recusandae aliquid, exercitationem ipsum hic.
+                </br>Quisquam, explicabo ipsum? Esse quaerat magni pariatur voluptates.
+            </i>
+        </p>
+    </div>
 
-  </div> -->
+    <div class="contact">
+        <p>Contact me!<br>
+            <a href="mailto:jiyanaro@gmail.com">jiyanaro@gmail.com</a><br>
+            076-123 45 67 </p>
+    </div>
 
-    <!-- <div class="picturebox">
-        <div style="position:relative;">
-            <img src="assets/img/jijo_picture.jpg" width="200" height="200">
+    <div class="picture">
+        <img class="photo-image" src="assets/indvidual-portfolio-assets/jijo_picture.jpg" alt="Jiyan">
+    </div>
 
-
-        </div>
-
-    </div> -->
-
-    <!--grundprogramering for mitt diagram "chart" & "bars" -->
-
-    <div class="diagram">
-        <div class="nummer">
-            <ul>
-                <li><span>100%</span></li>
-                <li><span>50%</span></li>
-                <li><span>0%</span></li>
-            </ul>
-        </div>
-        <!--ist för div class kan stå ul class -->
-
-        <div class="staplar">
-            <ul>
-                <li>
-                    <div class="stapel" data-percentage="50"></div> <span>val 01</span>
-                </li>
-                <li>
-                    <div class="stapel" data-percentage="30"></div> <span>val 02</span>
-                </li>
-                <li>
-                    <div class="stapel" data-percentage="60"></div> <span>val 03</span>
-                </li>
-                <li>
-                    <div class="stapel" data-percentage="100"></div> <span>val 04</span>
-                </li>
-                <li>
-                    <div class="stapel" data-percentage="80"></div> <span>val 05</span>
-                </li>
-            </ul>
-
-        </div>
+    <div class="staplar">
+        <ul>
+            <li>
+                <div class="stapel" data-percentage="45"></div> <span>html</span>
+            </li>
+            <li>
+                <div class="stapel" data-percentage="25"></div> <span>java</span>
+            </li>
+            <li>
+                <div class="stapel" data-percentage="35"></div> <span>c#</span>
+            </li>
+            <li>
+                <div class="stapel" data-percentage="75"></div> <span>html</span>
+            </li>
+            <li>
+                <div class="stapel" data-percentage="65"></div> <span>jquery</span>
+            </li>
+        </ul>
+    </div>
 
     </div> <!-- slut på diagram -->
 
@@ -92,14 +85,16 @@
                 $(this).animate({
                     'height': percentage + '%'
                 }, 1000);
-
             });
-
-        }); </script>
+        });
+    </script>
 
     </div>
+    <div class="footer"></div>
 
-
+    <!-- Local Scripts -->
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/createCookie.js"></script>
 
 </body>
 
