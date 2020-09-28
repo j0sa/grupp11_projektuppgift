@@ -18,7 +18,7 @@ body{
     box-shadow: 0 0 3px 0 purple;
     border-radius: 3px;
     position: absolute;
-    margin: 420px;
+    margin: 430px;
     margin-right: 0px;
     margin-top: 13%
 }
@@ -31,7 +31,6 @@ body{
 .staplar span{
     width: 100%;
     position: absolute;
-    bottom: -30px;
     text-align: center;
 }
 .staplar .stapel{
@@ -54,7 +53,7 @@ body{
     height:300px;
     position: absolute;
     left: 750px;
-    bottom: 65px;
+    top: 240px;
     padding-left: 170px;
     padding-right: 90px;
 }
