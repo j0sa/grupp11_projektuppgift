@@ -31,9 +31,11 @@ window.onload = function () {
     }
 
     function validateTel(tel) {
-        const reg = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+        const regOne = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+        const regTwo = /^((((0{2}?)|(\+){1})46)|0)7[\d]{8}/im;
+        const regThree = /^(([+]46)\s*(7)|07)[02369]\s*(\d{4})\s*(\d{3})$/im;
 
-        if (reg.test(String(tel))) {
+        if (regOne.test(String(tel.value))) {
             console.log(tel.id + " is valid");
             tel.style.outline = "3px solid green";
         } else {
