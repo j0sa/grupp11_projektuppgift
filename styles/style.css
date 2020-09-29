@@ -161,6 +161,12 @@ ul {
     list-style: none;
     padding: 0px;
 }
+ul > li:nth-child(3) {
+    padding-bottom: 10px;
+}
+ul > li:nth-child(6) {
+    padding-bottom: 35px;
+}
 .contactinformation {
     background: #7f27a1;
     color: white;
