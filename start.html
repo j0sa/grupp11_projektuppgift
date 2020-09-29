@@ -19,11 +19,11 @@
 
     <div class="slidesshow">
         <!-- images taken from unsplash -->
-        <img class="slidesshowimage" src="assets/img/bg1.jpg">
-        <img class="slidesshowimage" src="assets/img/bg2.jpg">
-        <img class="slidesshowimage" src="assets/img/bg3.jpg">
-        <img class="slidesshowimage" src="assets/img/bg4.jpg">
-        <img class="slidesshowimage" src="assets/img/bg5.jpg">
+        <img class="slidesshowimage" src="assets/img/bg1.jpg" alt="Picture of computer on table">
+        <img class="slidesshowimage" src="assets/img/bg2.jpg" alt="Picture of code">
+        <img class="slidesshowimage" src="assets/img/bg3.jpg" alt="Picture of computer on bed">
+        <img class="slidesshowimage" src="assets/img/bg4.jpg" alt="Picture of computer on bed">
+        <img class="slidesshowimage" src="assets/img/bg5.jpg" alt="Picture of computer on desk">
 
         <button class="changeimage-display-left" onclick="changeSlideIndex(-1)">&#10094;</button>
         <button class="changeimage-display-right" onclick="changeSlideIndex(1)">&#10095;</button>
@@ -37,8 +37,10 @@
             <div class="startcontent">
                 <h1><strong>Välkommen till Grupp 11</strong></h1>
                 <h2>På denna webbplats finner du information om vilka vi är och hur du kommer i kontakt med oss<br></h2>
-                <p><i>Klicka på knappen nedan för att ta dig till vår hemsida<i></p>
-                <a href="/index.html"><button>Till Hemsidan</button><a>
+                <p><i>Klicka på knappen nedan för att ta dig till vår hemsida</i></p>
+                <form action="/index.html" method="get">
+                    <button>Till Hemsidan</button>
+                </form>
             </div>
         </div>
     </div>
